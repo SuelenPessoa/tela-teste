@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+#estruturaGrid{
+    display: grid;
+    grid-template-areas: 'header header header header'
+                         'nav nav nav nav'
+                         'section section aside aside'
+                         'main main main main'
+                         'footer footer footer footer';
+    grid-template-rows: 580px 275px 500px 100px;
+    /* grid-template-columns: 25vw 25vw 25vw 25vw; */
+    background-color: black;
+}
+header{
+    grid-area: header;
+    background-color: #2CC96E;
+    display: flex;
+    justify-content: space-around;
+    background-image: url("img/xbox.jpg");
+    width: 100vw;
+    height: 380px;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+}
+
+#icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+}
+/* #img1{
+    width: 100vw;
+    max-width: 1518px;
+    height: 97%;
+    background-size: cover; 
+} */
+/* #img2{
+    width: 12%;
+    justify-content: flex-end;
+    display: flex; */
+    /* width: 84%;
+    position: absolute;
+    justify-content: flex-end;
+    display: flex; */
+/* } */
+#title{
+    display: flex;
+    color: yellow;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 70pt;
+}
+#text1{
+    color: white;
+    font-size: x-large;
+}
+
+header div:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header div:nth-child(4){
+    display: flex;
+}
+nav div:nth-child(1){
+    display: flex;
+}
+.div-pai{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/* .div-filha{
+    background-color: royalblue;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 90px;
+    height: 90px;
+} */
+.atributos{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14pt;
+    font-weight: 500;
+}
+
+img{
+    display: flex;
+    width: 400px;
+    border-radius: 20%;
+    box-shadow: 5px 10px #888888;   
+    margin-left: 30pt;
+}
+img:hover{
+    background-color: red;
+}
+.farcry{
+    width: 350px;
+    
+}
+p{
+    color:white;
+    font-size: 25px;
+    border: 2px solid yellow;
+    text-align: center;
+    margin: 10%; 
+    font-family: 'Courier New', Courier, monospace;
+}
+button{
+    width: 250px;
+    height: 50px;
+    margin-left: 70pt;
+    border-radius: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.botaoDev{
+    margin-top: 30pt;
+}
+.farcrybotao{
+    margin-bottom: 18pt;
+}
+
+button:hover{
+    background-color: yellow;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 20px;
+}
